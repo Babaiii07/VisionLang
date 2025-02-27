@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
+genai.configure(api_key='AIzaSyDAG1Hlm4Ge_ou5czvTHP-tyokvYhdE8wA')
 
 llm = Gemini(model_name="models/gemini-1.5-pro")
 embeddings = GeminiEmbedding(model_name="models/embedding-001")
